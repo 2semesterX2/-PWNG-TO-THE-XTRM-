@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
@@ -8,6 +10,329 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link href="css/style.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+        /* Eric Meyer's CSS Reset */
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* End of Eric Meyer's CSS Reset */
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section,
+        summary {
+            display: block;
+        }
+
+        body {
+            font: 12px/18px Roboto, sans-serif;
+            line-height: normal;
+        }
+
+
+
+
+        /* Middle
+    -----------------------------------------------------------------------------*/
+
+        /*.article1 {
+            height: 100vh;
+            position: relative; */
+        }
+
+        #video {
+            width: 100vw;
+             height: 100vh;
+            position: relative;
+
+
+        }
+
+
+        .article2,
+        .article3,
+        .article4,
+        .article5,
+        .article6,
+        .article7,
+        .article8,
+        .article9,
+        .article10,
+        .article11 {
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .article2,
+        .article4,
+        .article6,
+        .article8,
+        .article10 {
+            background-color: #f6ded0;
+        }
+
+        .article3, .article5, .article8, .article10 {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        body {
+            /* background-color: #f6ded0;*/
+        }
+
+        p {
+            font-size: 2em;
+            text-align: center;
+
+
+        }
+
+        em {
+            font-weight: bold;
+
+
+        }
+
+
+        .img1,
+        .img3 {
+            /*background-image: url(/images/dzieci.png);*/
+            background-size: cover;
+
+            max-width: 100vw;
+
+        }
+
+        .img2,
+        .img4 {
+            /* background-image: url(/images/dzieci2.jpg);*/
+            max-width: 100vw;
+
+
+        }
+
+    p.fading {
+	animation: fadein 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	0% { opacity:0 ;}
+	50% { opacity:0 ;}
+	100% { opacity:1 ;}
+}
+
+        /* Footer
+    -----------------------------------------------------------------------------*/
+
+        .footer {
+            height: 100px;
+
+        }
+
+        /* MEDIA QUERY
+    -----------------------------------------------------------------------------*/
+
+        @media only screen and (min-width: 1000px) {
+
+
+
+            p {
+                margin: 0em 10em 0em 10em;
+            }
+
+
+
+            .img1,
+            .img2,
+            .img3,
+            .img4 {
+                max-height: 80vh;
+                width: 80vw;
+
+
+            }
+
+            /*    .article3 p {
+                margin: 10em 10em 0em 10em;
+            }
+
+            .article4 p {
+                margin: 5em 10em 0em 10em;
+            }
+            .article5 p {
+                margin: 5em 10em 0em 10em;
+            }
+
+            .article6 p {
+                margin: 5em 10em 0em 10em;
+            }
+            .article7 p {
+                margin: 0em 10em 0em 10em;
+            } */
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -19,69 +344,88 @@
         <main class="content">
 
             <!--article 1-->
-            <div id="article1">
-                <video id="video" autoplay src="ayy%20lmao.mp4">
-                   
+            <div class="article1">
+                <video autoplay id="video" src="assets/thevideo.mp4">
+
            </video>
             </div>
             <div>
                 <!--article 2-->
                 <div class="article2">
-                    <p>A children playground, we have all been there, a place where we used to let our innocent spirit soar. What if I told you that playgrounds have changed significantly since our childhood, that these days it is entire countries, even continents that play on the same sandbox. I am talking about international schools.</p>
-                    <!--empty div 4 the illustration-->
-                   <!-- <div class="img1"></div>-->
-                    <img class="img1" src="images/ziemia2.png">
+                    <p>A children playground, we have all been there, a place where we used to let our innocent spirit soar. What if I told you that playgrounds have changed significantly since our childhood, that these days it is entire countries, even continents that play on the same sandbox.
+                        <br>
+                        <br>
+                        <em> I am talking about international schools.</em></p>
+
+
                 </div>
 
-                <!--article 3-->
-                <article class="article3">
+
+                <div class="article3">
+                    <img class="img1" src="images/KochsEarth.svg">
+                </div>
+
+
+                <div class="article4">
                     <p>
                         In today’s globalized era it is more than common that families travel to distant lands not just to pose in front of the Eiffel Tower or the Statue of Liberty, but to actually live in the country for a longer period of time, maybe even for good. Their reasons may vary, the goals do not. To ensure a bright future, mainly for the children.
+                        <br>
+                        <br>
+                        <br> Born in Australia, traveling through Tanzania, Uganda and Sweden, ending up in Denmark, all this before turning eight years of age. Annalie's parents are one of many who chose international elementary schooling for their child, who has already traveled more than most of us ever will.
 
                     </p>
-                    <p>
-                        Born in Australia, traveling through Tanzania, Uganda and Sweden, ending up in Denmark, all this before turning eight years of age. ?EJ MILLY Emily’s? parents are one of many who chose international elementary schooling for their child, who has already traveled more than most of us ever will.
+                </div>
 
-                    </p>
-                </article>
 
-                <!--article 4-->
-                <article class="article4">
-                  <!--  <div class="img2"></div> -->
-                    <img class="img2" src="images/dzieci.png">
+                <div class="article5"> <img class="img2" src="images/kids.svg"> </div>
+
+
+                <div class="article6">
+
+
                     <p>Having arrived in an entire new environment is without any doubt very challenging, which applies double to children. How to become a valid part of the society while still preserving the cultural pride of the homeland? Allow me to present Kochs Skole, the international playground of Aarhus.
 
                     </p>
 
-                </article>
+                </div>
 
-                <!--article 5-->
-                <article class="article5">
 
-                    <p>Merely at the age of seven, ?EJ MILLY? is already capable of easily swapping between Danish and English while talking to her friends coming from all over the world. Frequenting such varied environment carries far more than just being prepared language-wise. Numerous advantages, some of which might not be perceptible at the first sight. With the ability to work in a diverse collective, the children are getting ready for their great and rewarding future careers in companies filled with like-minded fun colleagues.
+                <div class="article7">
+
+                    <p>Merely at the age of seven, Annalie is already capable of easily swapping between Danish and English while talking to her friends coming from all over the world. Frequenting such varied environment carries far more than just being prepared language-wise. Numerous advantages, some of which might not be perceptible at the first sight. With the ability to work in a diverse collective, the children are getting ready for their great and rewarding future careers in companies filled with like-minded fun colleagues.
                     </p>
-                    <!--<div class="img3"></div>-->
-                    <img class="img3" src="images/ziemia1.png">
-                </article>
 
+
+                </div>
+
+
+                <div class="article8">
+                    <img class="img3" src="images/earth2.svg">
+
+
+                </div>
                 <!--article 6-->
-                <article class="article6">
+
+
+                <div class="article9">
                     <p>The cultural exchange doesns’t end there. Who is more eligible to teach the children open-mindness and cultural openness than someone who underwent the process of integration himself. The professional team of dedicated teachers also includes some from abroad.
+                        <br>
+                        <br>
+                        <br> Paul moved to Denmark nine years ago. Having taught in England for twenty years, including being a school leader, he claims that the newly established international department is exactly on the path it should be and is more than excited to be part of this project. He is confident that just in a bit will the school reach the half Danish, half international state, resulting in a truly diverse, inspiring environment where cultural gaps disappear and friendships and bonds form.
                     </p>
-                    <p>Paul moved to Denmark nine years ago. Having taught in England for twenty years, including being a school leader, he claims that the newly established international department is exactly on the path it should be and is more than excited to be part of this project. He is confident that just in a bit will the school reach the half Danish, half international state, resulting in a truly diverse, inspiring environment where cultural gaps disappear and friendships and bonds form.
-                    </p>
-                </article>
+                </div>
 
                 <!--article 7-->
-                <article class="article7">
+                <div class="article10"><img class="img4" src="images/playground.svg"></div>
+
+                <div class="article11">
                     <!--<div class="img4"></div>-->
-                    <img class="img4" src="images/dzieci2.jpg">
+
                     <p>And so it frequently happens that Paul from England drinks tea with Annalie from Australia while talking to Emma from Hong Kong, using Danish and English. It doesn’t matter where you come from, what tone does your skin have, or what you believe in, everyone is welcome to professionally evolve and gain knowledge at Kochs Skole, the international playground in the middle of Aarhus.
                     </p>
-                </article>
+                </div>
 
             </div>
-
         </main>
         <!-- .content -->
 
@@ -92,6 +436,7 @@
 
     </div>
     <!-- .wrapper -->
-
+<script src="js.js"></script>
 </body>
+
 </html>
