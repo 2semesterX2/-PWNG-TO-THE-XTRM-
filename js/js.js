@@ -1,17 +1,32 @@
-window.addEventListener("load", armMyEvents());
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
 
-function armMyEvents() {
-    window.addEventListener("scroll",
-        function () {
-            var nodes = document.getElementsByTagName("P");
-            for (var i = 0; i < nodes.length; i++) {
-                if (nodes[i].getBoundingClientRect().top >= 0 &&
-                    nodes[i].getBoundingClientRect().bottom < window.innerHeight) {
-                    nodes[i].setAttribute("class", "fading");
-                } else {
-                    nodes[i].setAttribute("class", "");
-                }
-            }
-        }
-    )
-}
+
+		$(document).ready(function() {
+
+			//next button
+
+			$('#next').click(function() {
+				$('html, body').animate({
+					scrollTop: $('.article1:nth-of-type(2)').offset().top * 1.2
+				}, 1000);
+			});
+
+
+		});
+
+	
