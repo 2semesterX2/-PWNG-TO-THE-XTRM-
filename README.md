@@ -1,3 +1,3 @@
 # -PWNG-TO-THE-XTRM-
-hello
+Group 6: Hanna, Vit, Andreea, Katarzyna
 
