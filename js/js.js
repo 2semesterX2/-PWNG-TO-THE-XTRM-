@@ -6,6 +6,7 @@ $(window).on("load", function () {
             /* Check the location of each desired element */
             var objectBottom = $(this).offset().top + $(this).outerHeight();
 
+            
             /* If the element is completely within bounds of the window, fade it in */
             if (objectBottom < windowBottom) { //object comes into view (scrolling down)
                 if ($(this).css("opacity") == 0) {
@@ -20,10 +21,9 @@ $(window).on("load", function () {
 
 
         
-        
 
 
-        // play audio
+        // play audio when 'visible'
         const mySound = document.getElementById("audio");
         const audioBottom = $("#scroll").offset().top + $("#scroll").outerHeight();
 
@@ -31,8 +31,8 @@ $(window).on("load", function () {
             mySound.play();
         }
 
-
         
+        //pause video when not visible
         const myVideo = document.getElementById("video");
         const videoBottom = $(".article1").offset().top + $(".article1").outerHeight();
 
