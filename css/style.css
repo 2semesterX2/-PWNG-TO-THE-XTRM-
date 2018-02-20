@@ -327,7 +327,7 @@ p {
         font-size: 2em;
     }
     100% {
-        font-size: 4em;
+        font-size: 3.5em;
     }
 
 }
@@ -344,22 +344,7 @@ em {
 }
 
 
-/*.img1,
-.img3 {
-  
-    background-size: cover;
 
-    max-width: 100vw;
-
-}
-
-.img2,
-.img4 {
- 
-    max-width: 100vw; 
-
-}
-*/
 
 /* Footer
     -----------------------------------------------------------------------------*/
