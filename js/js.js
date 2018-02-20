@@ -19,6 +19,10 @@ $(window).on("load", function () {
         });
 
 
+        
+        
+
+
         // play audio
         const mySound = document.getElementById("audio");
         const audioBottom = $("#scroll").offset().top + $("#scroll").outerHeight();
@@ -29,7 +33,36 @@ $(window).on("load", function () {
 
 
         
-       
+        const myVideo = document.getElementById("video");
+        const videoBottom = $(".article1").offset().top + $(".article1").outerHeight();
+
+        if (audioBottom < windowBottom) {
+            myVideo.pause();
+        } else {
+            myVideo.play ();
+        }
+
+
+
+        //zoom a paragraph when visible
+        const em = document.getElementById("em");
+        const emBottom = $("#em2").offset().top + $("#em2").outerHeight();
+
+        if (emBottom < windowBottom) {
+            document.getElementById("em").classList.add('active');
+        }
+
+
+
+        //zoom an image when visible
+        const kids = document.getElementById("kids");
+        const kidsBottom = $(".article10").offset().top + $(".article10").outerHeight();
+
+        if (kidsBottom < windowBottom) {
+            document.getElementById("kids").classList.add('active2');
+        }
+
+
 
 
     }).scroll(); //invoke scroll-handler on page-load
