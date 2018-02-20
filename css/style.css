@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Eric Meyer's CSS Reset */
 
@@ -150,7 +150,7 @@ summary {
 }
 
 body {
-    font: 12px/18px Lato, sans-serif;
+    font: 12px/18px Roboto, sans-serif;
     line-height: normal;
     background-color: #f6ded0
 }
@@ -168,7 +168,8 @@ body {
 */
 
 #video {
-    max-width: 100%;
+ width: 99vw; 
+ 
 
 
 }
@@ -241,7 +242,8 @@ body {
 
 
 
-.img1 {
+.img1,
+.img4 {
     animation-name: zoom;
     animation-duration: 2s;
     animation-iteration-count: infinite;
